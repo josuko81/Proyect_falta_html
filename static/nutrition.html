@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h2>Nutrition Data</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Country</th>
+          <th>State lgd code</th>
+          <th>State</th>
+          <th>Yearcode</th>
+          <th>Year</th>
+          <th>From year</th>
+          <th>Residence</th>
+        </tr>
+      </thead>
+      <tbody id="nutritionTable">
+        <!-- Table body will be populated with data -->
+      </tbody>
+    </table>
+
+    <h2>Add Nutrition Data</h2>
+    <form id="nutritionForm" method="POST" action="/nutrition">
+      <input type="text" name="Country" placeholder="Country">
+      <input type="number" name="State_lgd_code" placeholder="State LGD Code">
+      <!-- Agrega campos para los demás atributos según tu modelo 'otro_nombre' -->
+      <!-- ... -->
+
+      <button type="submit" class="btn btn-primary">Add Data</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="nutrition.js"></script>
+</body>
+
+</html>
